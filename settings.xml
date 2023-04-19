@@ -117,9 +117,14 @@ under the License.
      |       used together.
      |-->
     <server>
-      <id>nexusdeploymentrepo</id>
+      <id>spring-final-release</id>
       <username>admin</username>
-      <password>admin123</password>
+      <password>12345</password>
+    </server>
+    <server>
+      <id>spring-final-snapshots</id>
+      <username>admin</username>
+      <password>12345</password>
     </server>
     
 
@@ -249,9 +254,9 @@ under the License.
      <id>snapshot</id>
      <repositories>
        <repository>
-         <id>nexus-snapshot-repo</id>
-         <name>your custom repo</name>
-         <url>http://localhost:9081/repository/maven-snapshots/</url>
+         <id>spring-final-snapshots</id>
+         <name>spring-final-release</name>
+         <url>http://3.108.185.83:8081/repository/spring-final-snapshots/</url>
        </repository>
 	   
      </repositories>
@@ -260,9 +265,9 @@ under the License.
      <id>release</id>
      <repositories>
        <repository>
-         <id>nexus-release-repo</id>
-         <name>your custom repo</name>
-         <url>http://localhost:9081/repository/maven-release/</url>
+         <id>spring-final-release</id>
+         <name>spring-final-release</name>
+         <url>http://3.108.185.83:8081/repository/spring-final-release/</url
        </repository>
      </repositories>
    </profile>
